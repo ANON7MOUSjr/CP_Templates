@@ -74,10 +74,10 @@ public:
 		      }
 		      // complete overlap 
 		      if(low>=l && high <= r) return seg[ind]; 
-      		int mid = (low + high) >> 1; 
-      		int left = query(2*ind+1, low, mid, l, r);
-      		int right = query(2*ind+2, mid+1, high, l, r);
-      		return left + right; 
+      			int mid = (low + high) >> 1; 
+	      		int left = query(2*ind+1, low, mid, l, r);
+	      		int right = query(2*ind+2, mid+1, high, l, r);
+	      		return left + right; 
 	    }
 };
 int main() {
