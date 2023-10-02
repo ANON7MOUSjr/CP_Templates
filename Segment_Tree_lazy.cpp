@@ -8,7 +8,7 @@ public:
 		        lazy.resize(4 * n); 
 	      }
 	    
-      void build(int ind, int low, int high, int arr[]) {
+      	    void build(int ind, int low, int high, int arr[]) {
 		          if(low == high) {
 			          seg[ind] = arr[low];
 			          return; 
@@ -84,7 +84,7 @@ int main() {
 	  int n;  cin >> n; 
 	  int arr[n];
 	  for(int i = 0;i<n;i++) cin >> arr[i]; 
-	  ST st(n+1); 
+	  SegTree st(n+1); 
 	  st.build(0,0,n-1, arr); 
 	  int q;  cin >> q; 
 	  while(q--) {
