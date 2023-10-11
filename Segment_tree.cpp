@@ -1,6 +1,5 @@
-class SegTree {
+struct SegTree {
     vector<int> seg;
-public:
     SegTree(int n) {
         seg.resize(4 * n + 1);
     }
